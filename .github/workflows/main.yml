@@ -1,0 +1,14 @@
+name: first pipeline
+on:
+  push: 
+    branches: [ main ]
+  workflow_dispatch: 
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/version@v4
+      - name: Print hello
+        run: echo "hello from githubaction VM"
