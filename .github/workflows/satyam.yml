@@ -1,4 +1,4 @@
-name: first pipeline
+name: First pipeline
 on:
   push: 
     branches: [ main ]
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/version@v6
+        uses: actions/checkout@v6
         
       - name: Print hello
-        run: echo "hello from githubaction VM"
+        run: echo "hello from Linux VM"
