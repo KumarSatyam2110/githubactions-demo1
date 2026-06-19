@@ -11,5 +11,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         
-      - name: Print hello
+      - name: Print hello linux
         run: echo "hello from Linux VM"
+
+  job-2:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        
+      - name: Print hello window
+        run: echo "hello from Windows VM"
